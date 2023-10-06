@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------UNICONS------------------------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/github?f=brands&s=solid">
+    <!-- -----------------------CSS--------------------------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ---------------------FAVICON------------------------- -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Das' Portfolio</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="home-container">
+            <nav class="nav-bar">
+                <div class="nav-container">
+                    <div id="logo">Das<span>mini.</span></div>
+                    <div class="nav-right">
+                        <ul id="nav-items">
+                            <li><a href="#intro">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <!-- <li>Resume</li> -->
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#contacts">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="intro-page" id="intro">
+                <div class="intro-page-left">
+                    <p class="my-heading">HELLO</p>
+                    <h1 class="my-heading">I'm <span>Dasmini<br> a </span>Front-end Developer</h1>
+                    <p id="about-me-intro">The rumours are true, I build accessible and innovative websites that wows
+                        you and
+                        also me obviously!
+                        Need a next level website? No worries! Take a sip of your tea or coffee (if you are a cofee
+                        person) cuz, I am here to assist you.
+                        <br>And then a tip for life: If you want to live a happy life, tie it to God, not to people or
+                        things.<br>
+                    </p>
+                    <div class="buttons">
+                        <button class="btn-talk btn-fill"><a href="mailto:dasmini2001@gmail.com">Mail me</a></button>
+                        <button class="btn"><a href="#achievements">Achievements</a></button>
+                    </div>
+                </div>
+                <div class="intro-page-right-cont">
+                    <div class="intro-page-right">
+                        <img class="profile-img" src="images/profile-img.jpg" alt="profile image">
+                        <img class="profile-img-hover" src="images/profile-img-2.jpg" alt="profile image"
+                            onclick="changeImg(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="group-seperator" id="hr-1"> -->
+
+        <!-- about -->
+
+        <div class="about-container" id="about">
+            <div class="about-container-left">
+                <h1>So<span class="my-about">,</span>
+                    <span id="my-about-large-span">Who am
+                        <span class="my-about">I</span>
+                    </span> ?
+                </h1>
+                <p>Now, let's know something about me, shall we? I am a frontend developer and a somewhat okay kind of
+                    electronics engineer from
+                    a beautiful place called Kanyakumari which is in Tamil Nadu, India. My goal (as of now) is to create
+                    the most stunning and breathtaking
+                    websites, let's see if I can reach there. Currently I am creating websites out of my own interest
+                    which I also consider as the path to my goal.
+                </p>
+                <div class="talk-div">
+                    <p class="paragraph-talk">Wanna have a talk with me?</p>
+                    <button class="btn-talk btn-fill"><a href="#contacts">Let's talk</a></button>
+                </div>
+            </div>
+            <div class="about-container-right">
+                <h2><span class="quotes">“</span>Be there for others, but never leave yourself behind.</h2>
+                <p class="author">- obviously not me</p>
+                <p class="quotes">”</p>
+            </div>
+        </div>
+        <!-- <hr class="group-seperator"> -->
+
+        <!-- achievements -->
+
+        <div class="achievements-container-main" id="achievements">
+            <h2 class="achievement-heading">Let<span id="apostropy">'</span>s see what <span id="achieve-span"><span
+                        id="i-span">I</span> am good <span id="i-span">at .</span></span> </h2>
+            <div class="achievements-container">
+                <div class="achievements-container-left vertical-line">
+                    <ul class="achievement-topics">
+                        <li class="topic" id="1">AI-900</li> <!-- onclick="displayDetails(this)" -->
+                        <li class="topic" id="2">Gen AI 360</li>
+                        <li class="topic" id="3">Python basics</li>
+                        <li class="topic" id="4">MS SQL Server</li>
+                        <li class="topic" id="5">C programing</li>
+                        <li class="topic" id="6">Embedded C</li>
+                        <li class="topic" id="7">Electronics</li>
+                    </ul>
+                    <!-- <button onclick="scrollDown()">Scroll down</button> -->
+                </div>
+
+                <div class="achievements-container-right">
+                    <img class="cert-img" src="images/AI900-img.png" alt="certification image">
+                    <h2 class="cert-heading">AI-900</h2>
+                    <p class="cert-detail">AI-900 is a AI fundamentals certification. It's one of the microsoft
+                        certifications.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacts -->
+
+        <div class="contacts-container-main" id="contacts">
+            <h1 class="contacts-heading">Let<span class="contact-span">'</span>s have a <span class="contact-span">talk..</span></h1>
+            <div class="contacts-container">
+                <div class="contacts-container-left">
+                    <form action="" class="contact-form" onsubmit="emailSend(); reset(); return false;">
+                        <input type="text" name="name" id="name" class="form-content" placeholder="Name" required><br>
+                        <input type="email" name="email" id="email" class="form-content" placeholder="Email" required><br>
+                        <textarea rows="8"  type="text" name="" id="message" class="form-content" placeholder="Message" required></textarea><br>
+                        <button type="submit" class="form-content"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="contacts-container-right">
+                    <div class="info-right">
+                        <p class="p-info"><i class="fi fi-sr-marker i-info"></i>K.K Dist, Tamilnadu, India</p>
+                        <p class="p-info"><i class="fi fi-sr-envelope i-info"></i>+916385XXXXXX</p>
+                        <p class="p-info"><i class="fi fi-sr-phone-call i-info"></i>dasmini2001@gmail.com</p>
+                    </div>
+                    <hr>
+                    <a href="https://github.com/Dasmini"><i class="fa-brands fa-github i-link"></i></i></a>
+                    <i class="fa-brands fa-instagram i-link"></i>
+                    <a href="https://codepen.io/Dasmini"><i class="fa-brands fa-codepen i-link"></i></a>
+                    <hr>
+                    <p class="copywrite">All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c17c5488c5.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
